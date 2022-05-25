@@ -15,6 +15,9 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 # Inherit from Mi8937 device
 $(call inherit-product, device/xiaomi/Mi8937/device.mk)
 
+# Mini Gapps
+TARGET_USES_MINI_GAPPS := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
